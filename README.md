@@ -85,11 +85,10 @@ The previous straight-line regression on a log–log CCDF has been replaced by a
 
 For integer degree observations `x >= xmin`, the fitted model is
 
-\[
-P(X=x\mid X\ge x_{\min})
-= \frac{x^{-\alpha}}{\zeta(\alpha,x_{\min})},
+$$
+P(X=x\mid X\ge x_{\min}) = \frac{x^{-\alpha}}{\zeta(\alpha,x_{\min})},
 \qquad \alpha>1,
-\]
+$$
 
 where `zeta` is the Hurwitz zeta function. `alpha` is the fitted exponent and `xmin` is the lower cutoff; these names are retained throughout the inference outputs.
 
