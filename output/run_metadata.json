@@ -1,0 +1,36 @@
+{
+  "network": "BRCA1",
+  "input_sha256": "c023c2ca1be958ee44337bda617b55dfa7cb72ef12fa49d94fd6faf8e280b862",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "networkx": "3.4.2",
+    "powerlaw": "1.5"
+  },
+  "primary_min_tail": 100,
+  "sensitivity_min_tail": 50,
+  "bootstraps_per_analysis": 1000,
+  "primary_seed": 2026,
+  "sensitivity_seed": 2027,
+  "alpha_bounds": [
+    1.000001,
+    20.0
+  ],
+  "powerlaw_support": "integers xmin,...,infinity",
+  "ks_convention": "supremum over all integer CDF points; includes observed jumps and preceding integers",
+  "bootstrap_model": "independent semiparametric observations; empirical body and exact discrete power-law tail",
+  "bootstrap_refits": [
+    "xmin",
+    "alpha"
+  ],
+  "p_bootstrap_formula": "(exceedances + 1) / (B + 1)",
+  "mc_ci": "95% Wilson interval for the bootstrap exceedance probability, not a confidence interval for alpha",
+  "alternative_models": [
+    "exact discrete exponential",
+    "rounded discrete lognormal (half-integer bins)"
+  ],
+  "interpretation": "Exploratory i.i.d.-reference diagnostics, not a graph-level or disease-mechanism test."
+}
